@@ -12,6 +12,7 @@ html {
 }
 
 
+
 body {
     margin: 0;
     padding: 0; 
@@ -22,12 +23,14 @@ body {
     
 }
 
+
 header {
     text-align: center;
-    height: 8rem;
+    height: 9rem;
     padding: 8px 16px 8px 16px;
     background-color: darkcyan
 }
+
 
 header img {
     position: absolute;
@@ -42,7 +45,7 @@ header img {
     grid-template-columns: 1fr 1fr 1fr;
 }
 
-.livro1 span {
+.livro1 h4 {
     margin-top: 10px;
     margin-bottom: 10px;
     padding-top: 10px;
@@ -69,9 +72,9 @@ header img {
     
 }
 
-.livro2 span {
+.livro2 h4 {
     margin-top: 10px;
-    margin-bottom: 30px;
+    margin-bottom: 0px;
     padding-top: 10px;
     font-size: 1.2rem;
     font-weight: bold;
@@ -82,7 +85,7 @@ header img {
     height: auto;
     background-size: 100px 200px;
     margin-bottom: 10px;
-    margin-top: 28px;
+    margin-top: 16px;
     border: 3px solid white;
     border-radius: 10px;
 }
@@ -96,7 +99,7 @@ header img {
     padding: 0 1rem;
 }
 
-.livro3 span {
+.livro3 h4 {
     margin-top: 10px;
     margin-bottom: 15px;
     padding-top: 10px;
@@ -127,7 +130,7 @@ header img {
     grid-template-columns: 1fr 1fr 1fr;
 }
 
-.livro4 span {
+.livro4 h4 {
     margin-top: 10px;
     margin-bottom: 30px;
     padding-top: 10px;
@@ -153,7 +156,7 @@ header img {
     padding: 0 1rem;
 }
 
-.livro5 span {
+.livro5 h4 {
     margin-top: 10px;
     margin-bottom: 30px;
     padding-top: 10px;
@@ -166,7 +169,7 @@ header img {
     height: auto;
     background-size: 100px 200px;
     margin-bottom: 10px;
-    margin-top: 10px;
+    margin-top: 9px;
     border: 3px solid white;
     border-radius: 10px;
 }
@@ -179,7 +182,7 @@ header img {
     padding: 0 1rem;
 }
 
-.livro6 span {
+.livro6 h4 {
     margin-top: 10px;
     margin-bottom: 30px;
     padding-top: 20px;
@@ -192,7 +195,7 @@ header img {
     height: auto;
     background-size: 100px 200px;
     margin-bottom: 10px;
-    margin-top: 28px;
+    margin-top: 22px;
     border: 3px solid white;
     border-radius: 10px;
 }
@@ -210,7 +213,7 @@ header img {
     grid-template-columns: 1fr 1fr 1fr;
 }
 
-.livro7 span {
+.livro7 h4 {
     margin-top: 10px;
     margin-bottom: 30px;
     padding-top: 10px;
@@ -223,7 +226,7 @@ header img {
     height: auto;
     background-size: 100px 200px;
     margin-bottom: 10px;
-    margin-top: 12px;
+    margin-top: 0px;
     border: 3px solid white;
     border-radius: 10px;
 }
@@ -236,7 +239,7 @@ header img {
     padding: 0 1rem;
 }
 
-.livro8 span {
+.livro8 h4 {
     margin-top: 20px;
     margin-bottom: 30px;
     padding-top: 10px;
@@ -249,7 +252,7 @@ header img {
     height: auto;
     background-size: 100px 200px;
     margin-bottom: 10px;
-    margin-top: 30px;
+    margin-top: 11px;
     border: 3px solid white;
     border-radius: 10px;
 }
@@ -262,7 +265,7 @@ header img {
     padding: 0 1rem;
 }
 
-.livro9 span {
+.livro9 h4 {
     margin-top: 20px;
     margin-bottom: 30px;
     padding-top: 10px;
