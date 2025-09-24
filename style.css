@@ -1,0 +1,289 @@
+@font-face {
+    font-family: 'BookMatch';
+    src: url(Novecentosanswide-DemiBold.otf);
+}
+
+h1 {
+    font-family: BookMatch;
+}
+html {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    margin: 0;
+    padding: 0; 
+    background-size: cover; 
+    background-position: center; 
+    background-color: rgb(245, 232, 217);
+    
+    
+}
+
+header {
+    text-align: center;
+    height: 8rem;
+    padding: 8px 16px 8px 16px;
+    background-color: darkcyan
+}
+
+header img {
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    width: 100px;
+    height: auto;
+}
+
+.section-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.livro1 span {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.livro1 img {
+    width: 150px;
+    height: auto;
+    background-size: 100px 200px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border: 3px solid white;
+    border-radius: 10px;
+}
+
+.livro1 {
+    margin: 5rem;
+    background-color: rgba(211, 126, 30, 0.658);
+    border-radius: 16px;
+    text-align: center;
+    padding: 0 1rem;
+    
+}
+
+.livro2 span {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    padding-top: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.livro2 img {
+    width: 160px;
+    height: auto;
+    background-size: 100px 200px;
+    margin-bottom: 10px;
+    margin-top: 28px;
+    border: 3px solid white;
+    border-radius: 10px;
+}
+
+
+.livro2 {
+    margin:5rem;
+    background-color: rgba(211, 126, 30, 0.658);
+    border-radius: 16px;
+    text-align: center;
+    padding: 0 1rem;
+}
+
+.livro3 span {
+    margin-top: 10px;
+    margin-bottom: 15px;
+    padding-top: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.livro3 img {
+    width: 160px;
+    height: auto;
+    background-size: 100px 200px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border: 3px solid white;
+    border-radius: 10px;
+}
+
+.livro3 {
+    margin: 5rem;
+    background-color: rgba(211, 126, 30, 0.658);
+    border-radius: 16px;
+    text-align: center;
+    padding: 0 1rem;
+}
+
+.section-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.livro4 span {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    padding-top: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.livro4 img {
+    width: 160px;
+    height: auto;
+    background-size: 100px 200px;
+    margin-bottom: 10px;
+    margin-top: 9px;
+    border: 3px solid white;
+    border-radius: 10px;
+}
+
+.livro4 {
+    margin: 5rem;
+    text-align: center;
+    background-color: rgba(211, 126, 30, 0.658);
+    border-radius: 16px;
+    padding: 0 1rem;
+}
+
+.livro5 span {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    padding-top: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.livro5 img {
+    width: 150px;
+    height: auto;
+    background-size: 100px 200px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border: 3px solid white;
+    border-radius: 10px;
+}
+
+.livro5 {
+    margin: 5rem;
+    text-align: center;
+    background-color: rgba(211, 126, 30, 0.658);
+    border-radius: 16px;
+    padding: 0 1rem;
+}
+
+.livro6 span {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    padding-top: 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.livro6 img {
+    width: 160px;
+    height: auto;
+    background-size: 100px 200px;
+    margin-bottom: 10px;
+    margin-top: 28px;
+    border: 3px solid white;
+    border-radius: 10px;
+}
+
+.livro6 {
+    margin: 5rem;
+    text-align: center;
+    background-color: rgba(211, 126, 30, 0.658);
+    border-radius: 16px;
+    padding: 0 1rem;
+}
+
+.section-3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.livro7 span {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    padding-top: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.livro7 img {
+    width: 160px;
+    height: auto;
+    background-size: 100px 200px;
+    margin-bottom: 10px;
+    margin-top: 12px;
+    border: 3px solid white;
+    border-radius: 10px;
+}
+
+.livro7 {
+    margin: 5rem;
+    text-align: center;
+    background-color: rgba(211, 126, 30, 0.658);
+    border-radius: 16px;
+    padding: 0 1rem;
+}
+
+.livro8 span {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    padding-top: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.livro8 img {
+    width: 160px;
+    height: auto;
+    background-size: 100px 200px;
+    margin-bottom: 10px;
+    margin-top: 30px;
+    border: 3px solid white;
+    border-radius: 10px;
+}
+
+.livro8 {
+    margin: 5rem;
+    text-align: center;
+    background-color: rgba(211, 126, 30, 0.658);
+    border-radius: 16px;
+    padding: 0 1rem;
+}
+
+.livro9 span {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    padding-top: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.livro9 img {
+    width: 160px;
+    height: auto;
+    background-size: 100px 200px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border: 3px solid white;
+    border-radius: 10px;
+}
+
+.livro9 {
+    margin: 5rem;
+    text-align: center;
+    background-color: rgba(211, 126, 30, 0.658);
+    border-radius: 16px;
+    padding: 0 1rem;
+}
