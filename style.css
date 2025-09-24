@@ -2,10 +2,20 @@
     font-family: 'BookMatch';
     src: url(Novecentosanswide-DemiBold.otf);
 }
+@font-face {
+    font-family: 'Livros';
+    src: url(Baskervville-VariableFont_wght.ttf);
+}
 
 h1 {
     font-family: BookMatch;
 }
+
+header h3{
+    font-family: Livros;
+    font-weight: bold;
+}
+
 html {
     margin: 0;
     padding: 0;
@@ -32,6 +42,7 @@ header {
 }
 
 
+
 header img {
     position: absolute;
     top: 20px;
@@ -40,12 +51,14 @@ header img {
     height: auto;
 }
 
+
 .section-1 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
 
 .livro1 h4 {
+    font-family: Livros;
     margin-top: 10px;
     margin-bottom: 10px;
     padding-top: 10px;
@@ -64,6 +77,8 @@ header img {
 }
 
 .livro1 {
+    font-family: Livros;
+    font-weight: bold;
     margin: 5rem;
     background-color: rgba(211, 126, 30, 0.658);
     border-radius: 16px;
@@ -73,6 +88,7 @@ header img {
 }
 
 .livro2 h4 {
+    font-family: Livros;
     margin-top: 10px;
     margin-bottom: 0px;
     padding-top: 10px;
@@ -92,6 +108,8 @@ header img {
 
 
 .livro2 {
+    font-family: Livros;
+    font-weight: bold;
     margin:5rem;
     background-color: rgba(211, 126, 30, 0.658);
     border-radius: 16px;
@@ -100,6 +118,7 @@ header img {
 }
 
 .livro3 h4 {
+    font-family: Livros;
     margin-top: 10px;
     margin-bottom: 15px;
     padding-top: 10px;
@@ -118,6 +137,8 @@ header img {
 }
 
 .livro3 {
+    font-family: Livros;
+    font-weight: bold;
     margin: 5rem;
     background-color: rgba(211, 126, 30, 0.658);
     border-radius: 16px;
@@ -131,6 +152,7 @@ header img {
 }
 
 .livro4 h4 {
+    font-family: Livros;
     margin-top: 10px;
     margin-bottom: 30px;
     padding-top: 10px;
@@ -149,6 +171,8 @@ header img {
 }
 
 .livro4 {
+    font-family: Livros;
+    font-weight: bold;
     margin: 5rem;
     text-align: center;
     background-color: rgba(211, 126, 30, 0.658);
@@ -157,6 +181,7 @@ header img {
 }
 
 .livro5 h4 {
+    font-family: Livros;
     margin-top: 10px;
     margin-bottom: 30px;
     padding-top: 10px;
@@ -175,6 +200,8 @@ header img {
 }
 
 .livro5 {
+    font-family: Livros;
+    font-weight: bold;
     margin: 5rem;
     text-align: center;
     background-color: rgba(211, 126, 30, 0.658);
@@ -183,6 +210,7 @@ header img {
 }
 
 .livro6 h4 {
+    font-family: Livros;
     margin-top: 10px;
     margin-bottom: 30px;
     padding-top: 20px;
@@ -201,6 +229,8 @@ header img {
 }
 
 .livro6 {
+    font-family: Livros;
+    font-weight: bold;
     margin: 5rem;
     text-align: center;
     background-color: rgba(211, 126, 30, 0.658);
@@ -214,6 +244,7 @@ header img {
 }
 
 .livro7 h4 {
+    font-family: Livros;
     margin-top: 10px;
     margin-bottom: 30px;
     padding-top: 10px;
@@ -232,6 +263,8 @@ header img {
 }
 
 .livro7 {
+    font-family: Livros;
+    font-weight: bold;
     margin: 5rem;
     text-align: center;
     background-color: rgba(211, 126, 30, 0.658);
@@ -240,6 +273,7 @@ header img {
 }
 
 .livro8 h4 {
+    font-family: Livros;
     margin-top: 20px;
     margin-bottom: 30px;
     padding-top: 10px;
@@ -258,6 +292,8 @@ header img {
 }
 
 .livro8 {
+    font-family: Livros;
+    font-weight: bold;
     margin: 5rem;
     text-align: center;
     background-color: rgba(211, 126, 30, 0.658);
@@ -266,6 +302,7 @@ header img {
 }
 
 .livro9 h4 {
+    font-family: Livros;
     margin-top: 20px;
     margin-bottom: 30px;
     padding-top: 10px;
@@ -284,9 +321,16 @@ header img {
 }
 
 .livro9 {
+    font-family: Livros;
+    font-weight: bold;
     margin: 5rem;
     text-align: center;
     background-color: rgba(211, 126, 30, 0.658);
     border-radius: 16px;
     padding: 0 1rem;
+}
+
+footer {
+    font-family: Livros;
+    font-weight: bold;
 }
