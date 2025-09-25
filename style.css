@@ -6,52 +6,133 @@
     font-family: 'Livros';
     src: url(Baskervville-VariableFont_wght.ttf);
 }
-
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none; /* retirando decoração do texto*/
+}
 h1 {
     font-family: BookMatch;
-}
-
-header h3{
-    font-family: Livros;
-    font-weight: bold;
+    color: rgb(255, 255, 254); padding-top: 1.2rem; font-weight: bold
 }
 
 html {
     margin: 0;
     padding: 0;
+    
     scroll-behavior: smooth;
 }
 
-
-
 body {
-    margin: 0;
-    padding: 0; 
+    overflow-x: hidden; /* retirar o scrool na horizontal/ pode ser usado só o scrool (global)*/
+    overflow-y: auto;
+    font-size: 100%; /* tamanho da fonte */
     background-size: cover; 
-    background-position: center; 
-    background-color: rgb(245, 232, 217);
-    
+    background-position: center;  
     
 }
-
 
 header {
-    text-align: center;
     height: 9rem;
     padding: 8px 16px 8px 16px;
-    background-color: darkcyan
+    width: 100%;
+    position: fixed;
+    text-align: center;
+    background-color:#FFDC5E;
 }
 
+/*estilizando e modulando o cabeÇalho/ NAV */
+.cabecalho{
+    display:flex;
+    flex-direction: row ;
+    align-items: center;
+    justify-content: space-around;
+    padding: 60px 4%;
+    border-bottom: 0.4px solid rgba(0, 0, 0, 0.185);
+    text-shadow: 2px 2px 5px gray;
+}
 
-
-header img {
+.cabecalho-imagem {
     position: absolute;
     top: 20px;
     left: 10px;
     width: 100px;
-    height: auto;
+    height: 100px;
 }
 
+.cabecalho-menu{
+    display: flex;
+    gap: 32px;
+    margin-left: 24rem;
+}
+
+.cabecalho-menu-item{
+    font-family: Livros;
+    color: rgb(40, 14, 5);
+    font-weight: 400;
+    font-size: 18px;
+}
+
+/*BLOCO DE SOBRE:*/
+.conteudo{
+    margin-bottom: 40px;
+}
+
+.conteudo-principal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(240, 237, 234);
+    border-bottom: 0.4px solid rgba(0, 0, 0, 0.185);
+}
+
+.conteudo-principal-escrito-titulo{
+    display: flex;
+    font-family: BookMatch;
+    font-weight: 400;
+    margin-top: 200px;
+    margin-bottom: 30px;
+    align-items: center;
+    justify-content: space-around;
+    color: rgb(73, 35, 8);
+}
+
+.conteudo-principal-escrito-paragrafo{
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    font-family: Livros;
+    padding: 0 50px; /* espaço nas laterais */
+
+
+}
+
+/*BLOCO DE TOP RECOMENDAÇÕES*/
+.container {
+    display:block;
+    flex-direction:column-reverse;
+    gap: 0.25rem;
+    padding: 0 50px; /* espaço nas laterais */
+    padding-top: 20px;
+    width:auto;
+    background-color: rgb(240, 237, 234);
+    border-radius: 5px;
+    text-align: center;
+    font-family: BookMatch;
+    font-weight: bold;
+    color: rgb(73, 35, 8);
+}
+
+
+.texto{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #dfdfdf;
+}
 
 .section-1 {
     display: grid;
@@ -65,15 +146,17 @@ header img {
     padding-top: 10px;
     font-size: 1.2rem;
     font-weight: bold;
+    color: #352C58;
 }
 
 .livro1 img {
-    width: 150px;
+    width: 160px;
     height: auto;
     background-size: 100px 200px;
     margin-bottom: 10px;
     margin-top: 10px;
     border: 3px solid white;
+    box-shadow: 10px 5px 5px #000000bd;
     border-radius: 10px;
 }
 
@@ -81,10 +164,12 @@ header img {
     font-family: Livros;
     font-weight: bold;
     margin: 5rem;
-    background-color: rgba(211, 126, 30, 0.658);
+    background-color:#B08ADC;
+    box-shadow: 10px 5px 5px #000000bd;
     border-radius: 16px;
     text-align: center;
     padding: 0 1rem;
+    color: #352C58;
     
 }
 
@@ -95,6 +180,7 @@ header img {
     padding-top: 10px;
     font-size: 1.2rem;
     font-weight: bold;
+    color: black;
 }
 
 .livro2 img {
@@ -102,8 +188,9 @@ header img {
     height: auto;
     background-size: 100px 200px;
     margin-bottom: 10px;
-    margin-top: 16px;
+    margin-top: 45px;
     border: 3px solid white;
+    box-shadow: 10px 5px 5px #000000bd;
     border-radius: 10px;
 }
 
@@ -112,7 +199,8 @@ header img {
     font-family: Livros;
     font-weight: bold;
     margin:5rem;
-    background-color: rgba(211, 126, 30, 0.658);
+    background-color: #C44104;
+    box-shadow: 10px 5px 5px #000000bd;
     border-radius: 16px;
     text-align: center;
     padding: 0 1rem;
@@ -128,12 +216,13 @@ header img {
 }
 
 .livro3 img {
-    width: 160px;
+    width: 165px;
     height: auto;
     background-size: 100px 200px;
     margin-bottom: 10px;
     margin-top: 10px;
     border: 3px solid white;
+    box-shadow: 10px 5px 5px #000000bd;
     border-radius: 10px;
 }
 
@@ -141,7 +230,8 @@ header img {
     font-family: Livros;
     font-weight: bold;
     margin: 5rem;
-    background-color: rgba(211, 126, 30, 0.658);
+    background-color: #6EB57C;
+    box-shadow: 10px 5px 5px #000000bd;
     border-radius: 16px;
     text-align: center;
     padding: 0 1rem;
@@ -159,6 +249,7 @@ header img {
     padding-top: 10px;
     font-size: 1.2rem;
     font-weight: bold;
+    
 }
 
 .livro4 img {
@@ -168,6 +259,7 @@ header img {
     margin-bottom: 10px;
     margin-top: 9px;
     border: 3px solid white;
+    box-shadow: 10px 5px 5px #000000bd;
     border-radius: 10px;
 }
 
@@ -175,10 +267,12 @@ header img {
     font-family: Livros;
     font-weight: bold;
     margin: 5rem;
-    text-align: center;
-    background-color: rgba(211, 126, 30, 0.658);
+    background-color:#B08ADC;
+    box-shadow: 10px 5px 5px #000000bd;
     border-radius: 16px;
+    text-align: center;
     padding: 0 1rem;
+    color: #352C58;
 }
 
 .livro5 h4 {
@@ -195,8 +289,9 @@ header img {
     height: auto;
     background-size: 100px 200px;
     margin-bottom: 10px;
-    margin-top: 9px;
+    margin-top: 35px;
     border: 3px solid white;
+    box-shadow: 10px 5px 5px #000000bd;
     border-radius: 10px;
 }
 
@@ -205,7 +300,8 @@ header img {
     font-weight: bold;
     margin: 5rem;
     text-align: center;
-    background-color: rgba(211, 126, 30, 0.658);
+    background-color: #C44104;
+    box-shadow: 10px 5px 5px #000000bd;
     border-radius: 16px;
     padding: 0 1rem;
 }
@@ -224,8 +320,9 @@ header img {
     height: auto;
     background-size: 100px 200px;
     margin-bottom: 10px;
-    margin-top: 22px;
+    margin-top: 46px;
     border: 3px solid white;
+    box-shadow: 10px 5px 5px #000000bd;
     border-radius: 10px;
 }
 
@@ -234,7 +331,8 @@ header img {
     font-weight: bold;
     margin: 5rem;
     text-align: center;
-    background-color: rgba(211, 126, 30, 0.658);
+    background-color:#6EB57C;
+    box-shadow: 10px 5px 5px #000000bd;
     border-radius: 16px;
     padding: 0 1rem;
 }
@@ -258,8 +356,9 @@ header img {
     height: auto;
     background-size: 100px 200px;
     margin-bottom: 10px;
-    margin-top: 0px;
+    margin-top: 20px;
     border: 3px solid white;
+    box-shadow: 10px 5px 5px #000000bd;
     border-radius: 10px;
 }
 
@@ -267,10 +366,12 @@ header img {
     font-family: Livros;
     font-weight: bold;
     margin: 5rem;
-    text-align: center;
-    background-color: rgba(211, 126, 30, 0.658);
+    background-color:#B08ADC;
+    box-shadow: 10px 5px 5px #000000bd;
     border-radius: 16px;
+    text-align: center;
     padding: 0 1rem;
+    color: #352C58;
 }
 
 .livro8 h4 {
@@ -283,12 +384,13 @@ header img {
 }
 
 .livro8 img {
-    width: 160px;
+    width: 150px;
     height: auto;
     background-size: 100px 200px;
     margin-bottom: 10px;
-    margin-top: 11px;
+    margin-top: 30px;
     border: 3px solid white;
+    box-shadow: 10px 5px 5px #000000bd;
     border-radius: 10px;
 }
 
@@ -297,7 +399,8 @@ header img {
     font-weight: bold;
     margin: 5rem;
     text-align: center;
-    background-color: rgba(211, 126, 30, 0.658);
+    background-color:  #C44104;
+    box-shadow: 10px 5px 5px #000000bd;
     border-radius: 16px;
     padding: 0 1rem;
 }
@@ -318,6 +421,7 @@ header img {
     margin-bottom: 10px;
     margin-top: 10px;
     border: 3px solid white;
+    box-shadow: 10px 5px 5px #000000bd;
     border-radius: 10px;
 }
 
@@ -326,12 +430,57 @@ header img {
     font-weight: bold;
     margin: 5rem;
     text-align: center;
-    background-color: rgba(211, 126, 30, 0.658);
+    background-color: #6EB57C;
+    box-shadow: 10px 5px 5px #000000bd;
     border-radius: 16px;
     padding: 0 1rem;
 }
 
+/*BLOCO DE RESENHAS*/
+
+.bloco{
+    display:flex;
+    flex-direction:column;
+    gap: 0.25rem;
+    padding: 0 50px; /* espaço nas laterais */
+    width: auto;
+    background-color: #6d93ab;
+    text-align: center;
+}
+
+.bloco h3{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #f0eeee;
+}
+
+.bloco img{
+    display: block;              /* Remove espaço extra abaixo da imagem */
+    margin: 0 auto;              /* Centraliza horizontalmente */
+    max-width: 100%;             /* Garante que a imagem não ultrapasse o contêiner */
+    height: 100;                /* Mantém a proporção da imagem */
+    border-radius: 8px;          /* Opcional: cantos arredondados */
+    width: 300px;
+    box-shadow: 10px 5px 5px #000000bd; /*coloquei sobreamento nas bordas*/
+    margin-bottom: 40px;
+}
+
 footer {
+    display: flex;
+    justify-content: space-between; /* coloca os elementos para as pontas */
+    align-items: center;            /* centraliza verticalmente */
+    padding: 10px 20px;
+    color: black; 
+    margin: auto;  
+    margin-bottom: 1rem;
     font-family: Livros;
-    font-weight: bold;
+}
+
+.icones-main {
+    display: flex;
+    gap: 10px; 
+}
+
+.icones-main img {
+    width: 30px;   
 }
