@@ -17,15 +17,12 @@ h1 {
     color: rgb(255, 255, 254); padding-top: 1.2rem; font-weight: bold
 }
 
-
 html {
     margin: 0;
     padding: 0;
     
     scroll-behavior: smooth;
 }
-
-
 
 body {
     overflow-x: hidden; /* retirar o scrool na horizontal/ pode ser usado só o scrool (global)*/
@@ -36,6 +33,15 @@ body {
     
 }
 
+header {
+    height: 9rem;
+    padding: 8px 16px 8px 16px;
+    width: 100%;
+    position: fixed;
+    text-align: center;
+    background-color:#FFDC5E;
+}
+
 /*estilizando e modulando o cabeÇalho/ NAV */
 .cabecalho{
     display:flex;
@@ -43,7 +49,8 @@ body {
     align-items: center;
     justify-content: space-around;
     padding: 60px 4%;
-    
+    border-bottom: 0.4px solid rgba(0, 0, 0, 0.185);
+    text-shadow: 2px 2px 5px gray;
 }
 
 .cabecalho-imagem {
@@ -57,6 +64,7 @@ body {
 .cabecalho-menu{
     display: flex;
     gap: 32px;
+    margin-left: 24rem;
 }
 
 .cabecalho-menu-item{
@@ -69,7 +77,6 @@ body {
 /*BLOCO DE SOBRE:*/
 .conteudo{
     margin-bottom: 40px;
-    border-top: 0.4px solid #dfdfdf;
 }
 
 .conteudo-principal{
@@ -77,14 +84,9 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    
+    background-color: rgb(240, 237, 234);
+    border-bottom: 0.4px solid rgba(0, 0, 0, 0.185);
 }
-
-/*
-@media(max-width: 768px) {
-    .container{
-        grid-template-columns:1fr ; /*defir que ele irá ter uma coluna}}*/
-
 
 .conteudo-principal-escrito-titulo{
     display: flex;
@@ -115,13 +117,14 @@ body {
     flex-direction:column-reverse;
     gap: 0.25rem;
     padding: 0 50px; /* espaço nas laterais */
+    padding-top: 20px;
     width:auto;
     background-color: rgb(240, 237, 234);
     border-radius: 5px;
     text-align: center;
-    padding: 0 50px; /* espaço nas laterais */
-    font-family: Livros;
+    font-family: BookMatch;
     font-weight: bold;
+    color: rgb(73, 35, 8);
 }
 
 
@@ -130,17 +133,6 @@ body {
     margin-bottom: 10px;
     color: #dfdfdf;
 }
-
-
-header {
-    height: 9rem;
-    padding: 8px 16px 8px 16px;
-    width: 100%;
-    position: fixed;
-    text-align: center;
-    background-color:#FFDC5E;
-}
- 
 
 .section-1 {
     display: grid;
@@ -158,7 +150,7 @@ header {
 }
 
 .livro1 img {
-    width: 150px;
+    width: 160px;
     height: auto;
     background-size: 100px 200px;
     margin-bottom: 10px;
@@ -177,7 +169,7 @@ header {
     border-radius: 16px;
     text-align: center;
     padding: 0 1rem;
-     color: #352C58;
+    color: #352C58;
     
 }
 
@@ -196,7 +188,7 @@ header {
     height: auto;
     background-size: 100px 200px;
     margin-bottom: 10px;
-    margin-top: 16px;
+    margin-top: 45px;
     border: 3px solid white;
     box-shadow: 10px 5px 5px #000000bd;
     border-radius: 10px;
@@ -224,7 +216,7 @@ header {
 }
 
 .livro3 img {
-    width: 160px;
+    width: 165px;
     height: auto;
     background-size: 100px 200px;
     margin-bottom: 10px;
@@ -243,7 +235,6 @@ header {
     border-radius: 16px;
     text-align: center;
     padding: 0 1rem;
-    color: #DADADA;
 }
 
 .section-2 {
@@ -281,7 +272,7 @@ header {
     border-radius: 16px;
     text-align: center;
     padding: 0 1rem;
-     color: #352C58;
+    color: #352C58;
 }
 
 .livro5 h4 {
@@ -298,7 +289,7 @@ header {
     height: auto;
     background-size: 100px 200px;
     margin-bottom: 10px;
-    margin-top: 9px;
+    margin-top: 35px;
     border: 3px solid white;
     box-shadow: 10px 5px 5px #000000bd;
     border-radius: 10px;
@@ -329,7 +320,7 @@ header {
     height: auto;
     background-size: 100px 200px;
     margin-bottom: 10px;
-    margin-top: 22px;
+    margin-top: 46px;
     border: 3px solid white;
     box-shadow: 10px 5px 5px #000000bd;
     border-radius: 10px;
@@ -365,7 +356,7 @@ header {
     height: auto;
     background-size: 100px 200px;
     margin-bottom: 10px;
-    margin-top: 0px;
+    margin-top: 20px;
     border: 3px solid white;
     box-shadow: 10px 5px 5px #000000bd;
     border-radius: 10px;
@@ -393,11 +384,11 @@ header {
 }
 
 .livro8 img {
-    width: 160px;
+    width: 150px;
     height: auto;
     background-size: 100px 200px;
     margin-bottom: 10px;
-    margin-top: 11px;
+    margin-top: 30px;
     border: 3px solid white;
     box-shadow: 10px 5px 5px #000000bd;
     border-radius: 10px;
@@ -453,7 +444,6 @@ header {
     gap: 0.25rem;
     padding: 0 50px; /* espaço nas laterais */
     width: auto;
-    border-radius: 5px;
     background-color: #6d93ab;
     text-align: center;
 }
@@ -465,20 +455,32 @@ header {
 }
 
 .bloco img{
-  display: block;              /* Remove espaço extra abaixo da imagem */
-  margin: 0 auto;              /* Centraliza horizontalmente */
-  max-width: 100%;             /* Garante que a imagem não ultrapasse o contêiner */
-  height: 100;                /* Mantém a proporção da imagem */
-  border-radius: 8px;          /* Opcional: cantos arredondados */
-  width: 300px;
-  box-shadow: 10px 5px 5px #000000bd; /*coloquei sobreamento nas bordas*/
-  margin-bottom: 40px;
+    display: block;              /* Remove espaço extra abaixo da imagem */
+    margin: 0 auto;              /* Centraliza horizontalmente */
+    max-width: 100%;             /* Garante que a imagem não ultrapasse o contêiner */
+    height: 100;                /* Mantém a proporção da imagem */
+    border-radius: 8px;          /* Opcional: cantos arredondados */
+    width: 300px;
+    box-shadow: 10px 5px 5px #000000bd; /*coloquei sobreamento nas bordas*/
+    margin-bottom: 40px;
 }
 
-
 footer {
-    margin-top: 20px;
-    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between; /* coloca os elementos para as pontas */
+    align-items: center;            /* centraliza verticalmente */
+    padding: 10px 20px;
+    color: black; 
+    margin: auto;  
+    margin-bottom: 1rem;
     font-family: Livros;
-    font-weight: bold;
+}
+
+.icones-main {
+    display: flex;
+    gap: 10px; 
+}
+
+.icones-main img {
+    width: 30px;   
 }
